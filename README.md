@@ -2,5 +2,5 @@
 Technical Task for Associate Engineer position at the Wikimedia Foundation
 
 start:
-npm install
-nodemon app.js
+#npm install
+#nodemon app.js
