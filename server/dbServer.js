@@ -56,13 +56,13 @@ class DbServer {
                     if (err) reject(new Error(err.message));
                     resolve(res.insertId);
                 })
+                //app breaking point: Cannot read property 'insertId' of undefined
             });
 
             
             // console.log(insertId)
             return {
                 id : insertId, params
-
             }
 
         }catch (error){
