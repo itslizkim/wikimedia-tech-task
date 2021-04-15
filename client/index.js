@@ -24,7 +24,7 @@ function renderConfirmPage(e){
         const id = input.replace(/-/,'');
         this[id] = e.target[input].value;
     })
-
+    
     if(this.comment === ''){
         this.comment = " "
     }
