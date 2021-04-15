@@ -17,13 +17,14 @@ app.post('/donor', (request,response) => {
 
     // console.log(request.body)
     const params = request.body;
+    
     const db = dbServer.getDbServerInstance();
 
     const result = db.insertNewDonor(params);
-console.log(result)
+    // console.log(result)
 
     result
-    .then(data => response.json({ success : true}))
+    .then(data => response.json(data))
     .catch(err => console.log(err)) 
 })
 
